@@ -52,7 +52,7 @@ public class SampleCycler implements Cycler {
 }
 ```
 
-It is used like this.
+It can be used like this.
 ```java
 public class SampleActivity extends CyclerActivity implements SampleView {
 
