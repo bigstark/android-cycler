@@ -71,12 +71,12 @@ public class SampleActivity extends CyclerActivity implements SampleView {
         setUnbinder(ButterKnife.bind(this));
 
 
-        // add cycler
+        // add cycler. It helps Sample Cycler listening life cycle.
         sampleCycler = new SampleCycler();
         addCycler(sampleCycler);
 
 
-        // add rx subscription
+        // add rx subscription. It helps unsubscribe when activity is destroyed.
         Subscription subscription = bus
                 .observeOn(AndroidSchedulers.mainThread())
                 .ofType(String.class)
@@ -89,7 +89,7 @@ public class SampleActivity extends CyclerActivity implements SampleView {
         addSubscription(subscription);
 
 
-        // add mvp presenter
+        // add mvp presenter. It helps stop requests when activity is destroyed.
         samplePresenter = new SamplePresenterImpl(this);
         addPresenter(samplePresenter);
         samplePresenter.getSomething();
