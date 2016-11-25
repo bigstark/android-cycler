@@ -1,6 +1,6 @@
 # android-cycler
 [![license](https://img.shields.io/hexpm/l/plug.svg)](LICENSE)
-[![jitpack](https://img.shields.io/badge/jitpack-1.0-green.svg)](https://jitpack.io/#bigstark/bigstark-cycler)
+[![jitpack](https://img.shields.io/badge/jitpack-1.0-green.svg)](https://jitpack.io/#bigstark/android-cycler)
 
 It can help configure project base.
 
@@ -16,7 +16,7 @@ allprojects {
 ```
 ```
 dependencies {
-    compile 'com.github.bigstark:bigstark-cycler:1.1'
+    compile 'com.github.bigstark:android-cycler:1.1'
 }
 ```
 
