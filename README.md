@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/hexpm/l/plug.svg)](LICENSE)
 [![jitpack](https://img.shields.io/badge/jitpack-1.0-green.svg)](https://jitpack.io/#bigstark/bigstark-cycler)
 
-It can help that initialize base project
+It can help configure project base.
 
 ##Include your project
 add build.gradle
@@ -16,7 +16,7 @@ allprojects {
 ```
 ```
 dependencies {
-    compile 'com.github.bigstark:bigstark-cycler:1.0'
+    compile 'com.github.bigstark:bigstark-cycler:1.1'
 }
 ```
 
