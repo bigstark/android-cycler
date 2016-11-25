@@ -1,4 +1,4 @@
-# bigstark-cycler
+# android-cycler
 [![license](https://img.shields.io/hexpm/l/plug.svg)](LICENSE)
 [![jitpack](https://img.shields.io/badge/jitpack-1.0-green.svg)](https://jitpack.io/#bigstark/bigstark-cycler)
 
