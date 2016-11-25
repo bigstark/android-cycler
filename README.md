@@ -4,6 +4,8 @@
 
 It can help configure project base.
 
+It support to prevent leak objects, presenters, butterknife view, viewmodel and subscriptions etc.
+
 ##Include your project
 add build.gradle
 ```
