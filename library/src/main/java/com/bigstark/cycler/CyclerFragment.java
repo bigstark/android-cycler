@@ -18,7 +18,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by bigstark on 2016. 11. 24..
  */
 
-public class CyclerFragment extends Fragment {
+public class CyclerFragment extends Fragment implements CyclerManager {
 
     private Set<Cycler> cyclers = new HashSet<>();
     private Set<BasePresenter> presenters = new HashSet<>();
@@ -27,7 +27,8 @@ public class CyclerFragment extends Fragment {
 
     private boolean stopped = false;
 
-    protected boolean isStopped() {
+    @Override
+    public boolean isStopped() {
         return stopped;
     }
 
