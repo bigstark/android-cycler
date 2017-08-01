@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.bigstark.cycler.Cycler;
+import com.bigstark.cycler.CyclerManager;
 import com.bigstark.cycler.mvp.BasePresenter;
 
 import java.util.HashSet;
@@ -21,7 +22,7 @@ import rx.subscriptions.CompositeSubscription;
  * It need to be attached to {@link com.bigstark.cycler.CyclerActivity} or {@link com.bigstark.cycler.CyclerFragment}
  */
 
-public class CyclerViewModel implements Cycler {
+public class CyclerViewModel implements Cycler, CyclerManager {
 
     public CyclerViewModel(View itemView) {
         // bind ButterKnife and setUnbinder
@@ -34,7 +35,8 @@ public class CyclerViewModel implements Cycler {
 
     private boolean stopped = false;
 
-    protected boolean isStopped() {
+    @Override
+    public boolean isStopped() {
         return stopped;
     }
 

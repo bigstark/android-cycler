@@ -16,7 +16,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by bigstark on 2016. 11. 24..
  */
 
-public class CyclerActivity extends AppCompatActivity {
+public class CyclerActivity extends AppCompatActivity implements CyclerManager {
 
     private Set<Cycler> cyclers = new HashSet<>();
     private Set<BasePresenter> presenters = new HashSet<>();
@@ -25,7 +25,8 @@ public class CyclerActivity extends AppCompatActivity {
 
     private boolean stopped = false;
 
-    protected boolean isStopped() {
+    @Override
+    public boolean isStopped() {
         return stopped;
     }
 

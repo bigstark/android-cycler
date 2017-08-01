@@ -18,7 +18,7 @@ import rx.subscriptions.CompositeSubscription;
  * Created by bigstark on 2016. 12. 2..
  */
 
-public class CyclerDialog extends Dialog implements Cycler {
+public class CyclerDialog extends Dialog implements Cycler, CyclerManager {
 
     private WeakReference<Activity> weakActivity;
 
@@ -29,7 +29,8 @@ public class CyclerDialog extends Dialog implements Cycler {
 
     private boolean stopped = false;
 
-    protected boolean isStopped() {
+    @Override
+    public boolean isStopped() {
         return stopped;
     }
 
