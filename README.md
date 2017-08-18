@@ -6,7 +6,7 @@ It can help configure project base.
 
 It support to prevent leak objects, presenters, butterknife view, viewmodel and subscriptions etc.
 
-##Include your project
+## Include your project
 add build.gradle
 ```
 allprojects {
@@ -22,7 +22,7 @@ dependencies {
 }
 ```
 
-##Usage
+## Usage
 Implement Cycler for using life cycle
 ```java
 public class SampleCycler implements Cycler {
