@@ -122,8 +122,8 @@ public class CyclerFragment extends Fragment implements CyclerManager {
 
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onResume() {
+        super.onResume();
         stopped = false;
 
         for (Cycler cycler : cyclers) {
@@ -143,13 +143,13 @@ public class CyclerFragment extends Fragment implements CyclerManager {
 
 
     @Override
-    public void onStop() {
+    public void onPause() {
         for (Cycler cycler : cyclers) {
             cycler.onLifeCycleStopped();
         }
 
         stopped = true;
-        super.onStop();
+        super.onPause();
     }
 
 
