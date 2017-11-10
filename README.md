@@ -18,7 +18,7 @@ allprojects {
 ```
 ```
 dependencies {
-    compile 'com.github.bigstark:android-cycler:1.2'
+    compile 'com.github.bigstark:android-cycler:1.3.2'
 }
 ```
 
